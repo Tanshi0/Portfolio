@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.page{
+    width: min(100% - 2rem, 1200px);
+    margin-inline: auto;
+    background-color: rgb(53,53,53);
+}
+
+.sneakers-promo{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.sneaker-card{
+    padding: 1.5rem;
+    margin: 0;
+    width: 350px;
+    border-radius: 50px;
+    color: white;
+}
+
+.sneaker-card_color_orange{
+    background: linear-gradient(#F72648, #FCCB3C);
+}
+
+.sneaker-card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.sneaker-card-header__price{
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.sneaker-card-header__fav{
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    -webkit-mask-image: url("../images/heart-svgrepo-com.svg");
+    mask-image: url("../images/heart-svgrepo-com.svg");
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+    
+}
+
+.sneaker-card-header__fav:checked {
+    -webkit-mask-image: url("../images/heart-filled-svgrepo-com.svg");
+    mask-image: url("../images/heart-filled-svgrepo-com.svg");
+}    
+
+.sneaker-card-header__fav:hover{
+    -webkit-mask-image: url("../images/heart-filled-svgrepo-com.svg");
+    mask-image: url("../images/heart-filled-svgrepo-com.svg");
+} 
+
+.sneaker-card__title{
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    letter-spacing: 0.1em;
+    margin-top: 2em;
+    margin-bottom: 0;
+
+}
+
+.sneaker-card__text{
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.sneaker-card-image{
+    position: relative;
+    height: 300px;
+}
+
+.sneaker-card-image__img{
+    display: block;
+    position: absolute;
+    width: 380px;
+    top: -15px;
+    left: -20px;
+    transition: 0.5s;
+}
+.sneaker-card-image__img:hover{
+    width: 420px;
+}
+
+.sneaker-card-footer{
+    text-align: center;
+    position: relative;
+    
+}
+
+.btn{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 1em;
+    padding-inline: 2em;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+    border-radius: 50px;
+    border: 2px solid rgba(255,255,255,0.6);
+    background-color: inherit;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.sneaker-card-footer__type{
+    font-size: 1rem;
+    line-height: 1;
+    margin-top: 1em;
+    margin-bottom: 0;
+    font-variant-caps: small-caps;
+    font-feature-settings: "c2sc", "smcp";
+}
+
+/* второй */
+
+.sneaker-card_color_blue {
+    background: linear-gradient(#3CA3FC, #ffbc00);
+}
+
+.sneaker-card_color_green {
+    background: linear-gradient(#26C9F7, #00cd78);
+}
+
+
